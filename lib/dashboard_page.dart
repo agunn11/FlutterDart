@@ -4,13 +4,14 @@ class DashboardPage extends StatelessWidget {
   final String username; // Variabel untuk menyimpan username
 
   // Menerima username melalui konstruktor
-  const DashboardPage({Key? key, required this.username}) : super(key: key);
+  const DashboardPage({super.key, required this.username});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Dashboard'),
+        automaticallyImplyLeading: false,
       ),
       body: Center(
         child: Column(
